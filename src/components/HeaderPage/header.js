@@ -11,20 +11,20 @@ const items = [
 ];
 const header = () => {
   return (
-    <div class="bg-slate-800">
-      <nav class="bg-slate-400 dark:bg-gray-800  shadow ">
-        <div class="max-w-7xl mx-auto px-8">
-          <div class="flex items-center justify-end h-16">
-            <div class=" flex items-center">
-              <div class="absolute left-10">
-                <a class="flex-shrink-0" href="/">
-                  <img class="h-10 w-8" src={LogoBeer} alt="" />
+    <div className="bg-slate-800">
+      <nav className="bg-slate-400 dark:bg-gray-800  shadow ">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="flex items-center justify-end h-16">
+            <div className=" flex items-center">
+              <div className="absolute left-10">
+                <a className="flex-shrink-0" href="/">
+                  <img className="h-10 w-8" src={LogoBeer} alt="" />
                 </a>
               </div>
-              <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-4">
+              <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
                   <Link
-                    class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 ml-10 rounded-md text-sm font-medium"
+                    className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 ml-10 rounded-md text-sm font-medium"
                     to="/login"
                   >
                     Login
@@ -32,9 +32,9 @@ const header = () => {
                 </div>
               </div>
             </div>
-            <div class="block">
-              <div class="ml-4 flex items-center md:ml-6">
-                <div class="ml-3 relative">
+            <div className="block">
+              <div className="ml-4 flex items-center md:ml-6">
+                <div className="ml-3 relative">
                   {/* Dropdown inicio */}
 
                   <DropDownMenu
@@ -43,7 +43,7 @@ const header = () => {
                         width="20"
                         fill="currentColor"
                         height="20"
-                        class="text-gray-800"
+                        className="text-gray-800"
                         viewBox="0 0 1792 1792"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -56,13 +56,13 @@ const header = () => {
                 </div>
               </div>
             </div>
-            <div class="-mr-2 flex md:hidden">
-              <button class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+            <div className="-mr-2 flex md:hidden">
+              <button className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
                 <svg
                   width="20"
                   height="20"
                   fill="currentColor"
-                  class="h-8 w-8"
+                  className="h-8 w-8"
                   viewBox="0 0 1792 1792"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -72,10 +72,10 @@ const header = () => {
             </div>
           </div>
         </div>
-        <div class="md:hidden">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               to="/login"
             >
               Login

@@ -30,15 +30,16 @@ const colors = {
 
 const Button = (props: Props) => {
   return (
+    // ${colors[props.color]}
     <button
       onClick={props.onClick}
       type={props.submit ? "submit" : "button"}
       disabled={props.disabled}
       className={`${props.isFat ? "py-4 px-6 " : "py-2 px-4 "}${
         props.icon ? "flex justify-center items-center " : ""
-      } ${
-        colors[props.color]
-      } text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+      } 
+       
+      text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
         props.disabled ? " opacity-70 cursor-not-allowed" : ""
       }${!props.label ? " w-12 h-12" : ""} ${
         props.rounded ? "rounded-full" : "rounded-lg "
